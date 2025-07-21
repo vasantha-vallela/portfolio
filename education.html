@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Education</title>
+  <style>
+    body {
+      background: #070707;
+      color: #101011;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      color:  #eb4c0e;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: auto;
+      padding-top: 40px;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: hsl(0, 27%, 96%);
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .entry {
+      padding: 20px 40px;
+      position: relative;
+      width: 50%;
+    }
+
+    .entry.left {
+      left: 0;
+    }
+
+    .entry.right {
+      left: 50%;
+    }
+
+    .entry::before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #0dc610;
+      top: 30px;
+      right: -10px;
+    }
+
+    .entry.right::before {
+      left: -10px;
+    }
+
+    .content {
+      background: #fbf9f9;
+      padding: 20px;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .entry:hover .content {
+      transform: scale(1.03);
+    }
+
+    .content h2 {
+      margin-top: 0;
+      font-size: 1.3em;
+      color: #eb4c0e;
+    }
+
+    .content p {
+      margin: 5px 0;
+      font-size: 0.95em;
+    }
+
+    @media screen and (max-width: 768px) {
+      .entry, .entry.right {
+        left: 0 !important;
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+
+      .timeline::after {
+        left: 20px;
+      }
+
+      .entry::before, .entry.right::before {
+        left: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Education</h1>
+<div class="timeline">
+  <div class="entry left">
+    <div class="content">
+      <h2>B.Tech in Artificial Intelligence & Machine Learning</h2>
+      <p><strong>Pace Institute of Technology & Sciences</strong></p>
+      <p>October 2022 – may 2026</p>
+      <p>• Python Development<br>• Machine Learning<br>• Web Development</p>
+    </div>
+  </div>
+  <div class="entry right">
+    <div class="content">
+      <h2>Intermediate - MPC</h2>
+      <p><strong>Saadhana Junior College</strong></p>
+      <p>March 2020 – May 2022</p>
+      <p>• Maths, Physics, Chemistry<br>• English </p>
+    </div>
+  </div>
+  <div class="entry left">
+    <div class="content">
+      <h2>Primary & High School</h2>
+      <p><strong>ZP High School</strong></p>
+      <p>March 2010 – May 2020</p>
+      <p>• General Education<br>• Maths, English, Science</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

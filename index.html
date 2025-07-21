@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vasantha Vallela Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f172a;
+      color: white;
+      height: 100vh;
+      display: flex;
+      align-items: center; /* Vertical center */
+      justify-content: flex-start; /* Align to the left */
+    }
+
+    .left-middle {
+      padding-left: 50px;
+      text-align: left;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .typewriter-text {
+      font-size: 20px;
+      color: #eb4c0e;
+      font-weight: bold;
+      display: inline-block;
+      border-right: 2px solid #ea4c0e;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      margin-right: 15px;
+      color: #ccc;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      color: #eb4c0e;
+    }
+  </style>
+</head>
+<body>
+  <div class="left-middle">
+    <h1>VALLELA VASANTHA</h1>
+    <div>
+      <span class="typewriter-text" id="typewriter"></span>
+    </div>
+
+    <!-- Navigation with icons -->
+    <nav>
+      <a href="index.html">🏠 Home</a>
+      <a href="about.html">🙋 About</a>
+      <a href="education.html">🎓 Education</a>
+      <a href="resume.html">📄 Resume</a>
+      <a href="certifications.html">🏅 Certifications</a>
+      <a href="contact.html">📞 Contact</a>
+    </nav>
+  </div>
+
+  <script>
+    const phrases = ["I'm a fast learner.", "I'm a coder.", "I'm a web developer."];
+    let phraseIndex = 0;
+    let charIndex = 0;
+    const speed = 100;
+    const pause = 1500;
+
+    function typeWriter() {
+      const currentPhrase = phrases[phraseIndex];
+      if (charIndex < currentPhrase.length) {
+        document.getElementById("typewriter").textContent += currentPhrase.charAt(charIndex);
+        charIndex++;
+        setTimeout(typeWriter, speed);
+      } else {
+        setTimeout(eraseText, pause);
+      }
+    }
+
+    function eraseText() {
+      const currentText = document.getElementById("typewriter").textContent;
+      if (currentText.length > 0) {
+        document.getElementById("typewriter").textContent = currentText.slice(0, -1);
+        setTimeout(eraseText, speed / 2);
+      } else {
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+        charIndex = 0;
+        setTimeout(typeWriter, speed);
+      }
+    }
+
+    window.onload = typeWriter;
+  </script>
+</body>
+</html>

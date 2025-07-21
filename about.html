@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Vallela Vasantha - About</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0b1d2a;
+      color: white;
+    }
+
+    .navbar {
+      position: absolute;
+      top: 15px;
+      right: 25px;
+      font-size: 16px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar li {
+      display: inline;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: #eb4c0e; /* Hover effect */
+    }
+
+    .heading {
+      position: absolute;
+      top: 15px;
+      left: 25px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #eb4c0e;
+    }
+
+    .container {
+      padding: 60px 20px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 60px;
+    }
+
+    .profile-img {
+      width: 300px;
+      height: 380px; /* Bigger egg shape */
+      object-fit: cover;
+      border-radius: 50%;
+      border: 6px solid #eb4c0e; /* Orange border */
+      box-shadow: 0 0 14px rgba(235, 76, 14, 0.6); /* Glow effect */
+    }
+
+    .info {
+      max-width: 600px;
+      margin-left: 10%;
+    }
+
+    .info h2 {
+      margin-top: 0;
+      color:#eb4c0e;
+    }
+
+    .info p {
+      line-height: 1.5;
+    }
+
+    .info ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .info li i {
+      margin-right: 10px;
+      color:#eb4c0e;
+      padding-bottom: 3%;
+    }
+
+    .info li {
+      margin: 6px 0;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .info {
+        margin-left: 0;
+        text-align: center;
+      }
+      .navbar {
+        top: 5px;
+        right: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="certifications.html">Certifications</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- About Heading -->
+  <div class="heading">About</div>
+
+  <!-- Content -->
+  <div class="container">
+    <img src="vasu1.jpeg" alt="vasantha photo" class="profile-img">
+    <div class="info">
+      <h2>About Me</h2>
+      <p>
+        Hi, I am Vasantha! Currently, I am a recent graduate at Pace institute of technology and sciences, where I am diving into the exciting field of Artificial Intelligence and Machine Learning (AIML). My primary interests lie in web development, especially frontend development, where I enjoy creating visually appealing and user-friendly interfaces. I’m also skilled in programming languages such as Python and C, and I’m constantly learning and exploring new technologies to expand my skill set.
+      </p>
+      <ul>
+        <li><i class="fa-solid fa-cake-candles"></i>Birthday: 20 May 2005</li>
+        <li><i class="fa-solid fa-phone"></i>Phone: +91 7993645882</li>
+        <li><i class="fa-solid fa-location-dot"></i>City: Pothurajuturu (Ongole), Andhra Pradesh, 523333</li>
+        <li><i class="fa-solid fa-envelope"></i>Email: 22kq1a6129aiml@gmail.com</li>
+        <li><i class="fa-solid fa-building-columns"></i>Institution Email: 22kq1a6129@pace.ac.in</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

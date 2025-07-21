@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Certifications</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #cb966d;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      animation: fadeInUp 0.6s ease forwards;
+      opacity: 0;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-header {
+      background-color: #e4650f;
+      color: rgb(1, 1, 1);
+      padding: 20px;
+      font-size: 18px;
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+
+    .card-body p {
+      margin: 10px 0;
+      color: #555;
+    }
+
+    .verify-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .verify-link:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive fallback */
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My Certifications</h1>
+
+  <div class="grid">
+    <div class="card" style="animation-delay: 0s;">
+      <div class="card-header">IOT Fundamentals</div>
+      <div class="card-body">
+        <p><strong>Issued by:</strong> NPTEL</p>
+        <p><strong>Date:</strong> October 2024</p>
+        <p>Credential ID: IOTNPTEL-202408</p>
+        <a href="nptel iot.jpg" class="verify-link" target="_blank">View Certificate</a>
+      </div>
+    </div>
+
+    <div class="card" style="animation-delay: 0.4s;">
+      <div class="card-header">HTML Certification</div>
+      <div class="card-body">
+        <p><strong>Issued by:</strong>Spoken tutorial</p>
+        <p><strong>Date:</strong> October 2024</p>
+        <p>Credential ID: CSE-20220501</p>
+        <a href="spoken tutorial html.jpg" class="verify-link" target="_blank">View Certificate</a>
+      </div>
+    </div>
+
+    <div class="card" style="animation-delay: 0.1s;">
+      <div class="card-header">C Programming</div>
+      <div class="card-body">
+        <p><strong>Issued by:</strong> Codethantra</p>
+        <p><strong>Date:</strong> January 2023</p>
+        <p>Credential ID: GDAC-001234</p>
+        <a href="codethantra c.jpg" class="verify-link" target="_blank">View Certificate</a>
+      </div>
+    </div>
+
+    <div class="card" style="animation-delay: 0.2s;">
+      <div class="card-header">AWS AIML virtual</div>
+      <div class="card-body">
+        <p><strong>Issued by:</strong>Eduskills</p>
+        <p><strong>Date:</strong> August 2024</p>
+        <p>Credential ID: 7655985dafa87b87b4b871c83b0dc474</p>
+        <a href="aiml virtual.jpg" class="verify-link" target="_blank">View Certificate</a>
+      </div>
+    </div>
+
+    <div class="card" style="animation-delay: 0.3s;">
+      <div class="card-header">Python Programming</div>
+      <div class="card-body">
+        <p><strong>Issued by:</strong> Infosys Springboard</p>
+        <p><strong>Date:</strong> August 2024</p>
+        <p>Credential ID: PYINF-099123</p>
+        <a href="python infosys certificate.jpg" class="verify-link" target="_blank">View Certificate</a>
+      </div>
+    </div>
+
+    
+
+    <div class="card" style="animation-delay: 0.5s;">
+      <div class="card-header">java fundamentals</div>
+      <div class="card-body">
+        <p><strong>Issued by:</strong>Spoken tutorial</p>
+        <p><strong>Date:</strong> September 2023</p>
+        <p>Credential ID: CSE-202408</p>
+        <a href="spoken tutorial java.jpg" class="verify-link" target="_blank">View Certificate</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
